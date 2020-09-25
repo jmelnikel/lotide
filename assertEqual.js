@@ -3,7 +3,7 @@
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`Assertion Passed: ${actual} triple equals ${expected}`);
+    console.log(`Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`Assertion Failed: ${actual} does not equal ${expected}`);
   }
