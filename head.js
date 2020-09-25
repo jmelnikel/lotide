@@ -9,7 +9,7 @@ const assertEqual = function(actual, expected) {
 
 // This function will take the first item of an array and return the value (not in an array).
 const head = function(array) {
-  return array[0]
+  return array[0];
 };
 
 assertEqual(head([5, 6, 7]), 5);
