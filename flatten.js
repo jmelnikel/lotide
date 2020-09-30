@@ -11,9 +11,6 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
-// Do two arrays triple equal?
-// This function is given two arrays as arguments. It will print to the console if the arrarys given equal or not. The equality is not just in content, but order and index position of the elements.
-
 const assertArraysEqual = function(array1, array2) {
   if (!eqArrays(array1, array2)) {
     return console.log(`Assertion Failed: ${array1} does not equal ${array2}`);
@@ -22,7 +19,18 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, 3], [3, 2, 1]);
-assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
-assertArraysEqual(["1", "2", "3"], ["1", "2", 3]);
+// This function takes in an array of arrays and returns a one-level array with all the elements. This function only handles one level of nesting.
+
+const flatten = function(arrayOfArrays) {
+  let output = [];
+  for (let item of arrayOfArrays) {
+    if (!Array.isArray(item)) {
+      output.push(item);
+    } else {
+      output = output.concat(item);
+    }
+  }
+  return output;
+};
+
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
