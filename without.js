@@ -1,16 +1,23 @@
 // Here Temporarily
-const assertArraysEqual = function(array1, array2) {
+const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
-    return console.log(`Assertion Failed: ${array1} does not equal ${array2}`);
+    return false;
   }
   for (let index in array1) {
     if (array1[index] !== array2[index]) {
-      return console.log(`Assertion Failed: ${array1} does not equal ${array2}`);
+      return false;
     }
   }
-  return console.log(`Assertion Passed: ${array1} === ${array2}`);
+  return true;
 };
 
+const assertArraysEqual = function(array1, array2) {
+    if (!eqArrays(array1, array2)) {
+      return console.log(`Assertion Failed: ${array1} does not equal ${array2}`);
+    } else {
+      return console.log(`Assertion Passed: ${array1} === ${array2}`);
+    }
+};
 
 // This function takes in a source array and an itemsToRemove array and will return an array with only those elements in the source array that are not present in the itemsToRemove array. This function will not take in nested arrays or arrays of objects.
 
