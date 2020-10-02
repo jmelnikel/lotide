@@ -23,7 +23,6 @@ const countOnly = function(allItemsArray, itemsToCountObject) {
       output[item] += 1;
     }
   }
-  console.log(output);
   return output;
 };
 
