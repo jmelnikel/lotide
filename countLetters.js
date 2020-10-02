@@ -10,9 +10,8 @@ const assertEqual = function(actual, expected) {
 
 // This function will take in a string and count the occurance of each letter as an object.
 const countLetters = function(string) {
-  let usableString = string.split(" ").join("")
   let output = {};
-  for (let letter of usableString) {
+  for (let letter of string) {
     if (output[letter] === undefined) {
       output[letter] = 1;
     } else {
@@ -29,3 +28,4 @@ assertEqual(countLetters(string)["a"], 2);
 assertEqual(countLetters(string)["A"], 1);
 assertEqual(countLetters(string)["p"], undefined);
 assertEqual(countLetters(string)["P"], 2);
+assertEqual(countLetters(string)[" "], 2);
