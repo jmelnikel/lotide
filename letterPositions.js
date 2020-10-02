@@ -20,8 +20,6 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 //This function, when given a string, will return an object of the indexes of all the letters.
-const string = "HELLO and goodbye"
-
 const letterPositions = function(string) {
   let output = {};
   for (let index = 0; index < string.length; index++) {
@@ -35,6 +33,8 @@ const letterPositions = function(string) {
 };
 
 // Testing
+const string = "HELLO and goodbye";
+
 assertArraysEqual(letterPositions(string)["L"], [ 2, 3 ]);
 assertArraysEqual(letterPositions(string)[" "], [ 5, 9 ]);
 assertArraysEqual(letterPositions(string)["d"], [ 8, 13 ]);
