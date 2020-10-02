@@ -9,9 +9,6 @@ const assertEqual = function(actual, expected) {
 
 
 // This function will take the tail of an array (everything except the first element) and return a new array of those elements.
-
-const words =  ["Yo Yo", "Lighthouse", "Labs"];
-
 const tail = function(array) {
   let newArray = [];
   for (let i = 1; i < array.length; i++) {
@@ -19,6 +16,10 @@ const tail = function(array) {
   }
   return newArray;
 };
+
+
+// Testing
+const words =  ["Yo Yo", "Lighthouse", "Labs"];
 
 assertEqual(words.length, 3);
 assertEqual(tail(words).length, 2);

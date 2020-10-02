@@ -20,7 +20,6 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 // This function will take an array and return an array with the middle element or elements if the middle falls between two items.
-
 const middle = function(array) {
   const length = array.length;
   if (length < 3) {
@@ -38,6 +37,8 @@ const middle = function(array) {
   return output;
 };
 
+
+// Testing
 assertArraysEqual(middle([1, 2]), []);
 assertArraysEqual(middle([1]), []);
 assertArraysEqual(middle([1, 2, 3]), [2]);

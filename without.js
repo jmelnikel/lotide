@@ -20,10 +20,6 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 // This function takes in a source array and an itemsToRemove array and will return an array with only those elements in the source array that are not present in the itemsToRemove array. This function will not take in nested arrays or arrays of objects.
-
-const words = ["dog", "cat", "mouse", "chicken"];
-const numbers = [2, 5, -4, 23, 63];
-
 const without = function(source, itemsToRemove) {
   let outputArray = [];
   for (let item of source) {
@@ -33,6 +29,11 @@ const without = function(source, itemsToRemove) {
   }
   return outputArray;
 };
+
+
+// Testing
+const words = ["dog", "cat", "mouse", "chicken"];
+const numbers = [2, 5, -4, 23, 63];
 
 assertArraysEqual(words, ["dog", "cat", "mouse", "chicken"]);
 assertArraysEqual(numbers, [2, 5, -4, 23, 63]);

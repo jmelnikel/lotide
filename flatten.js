@@ -20,7 +20,6 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 // This function takes in an array of arrays and returns a one-level array with all the elements. This function only handles one level of nesting.
-
 const flatten = function(arrayOfArrays) {
   let output = [];
   for (let item of arrayOfArrays) {
@@ -33,4 +32,6 @@ const flatten = function(arrayOfArrays) {
   return output;
 };
 
+
+//Testing
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
