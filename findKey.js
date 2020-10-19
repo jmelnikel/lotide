@@ -28,4 +28,4 @@ let object = {
 
 assertEqual(findKey(object, x => x.stars === 2), "noma");
 assertEqual(findKey(object, x => x.stars === 3), "noma");
-assertEqual(findKey(object, x => x.stars === 4), undefined)
+assertEqual(findKey(object, x => x.stars === 4), undefined);
