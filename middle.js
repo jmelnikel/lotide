@@ -1,26 +1,5 @@
-// Here Temporarily
-const eqArrays = function(array1, array2) {
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let index in array1) {
-    if (array1[index] !== array2[index]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(actual, expected) {
-  if (!eqArrays(actual, expected)) {
-    return console.log(`Assertion Failed: ${actual} does not equal ${expected}`);
-  } else {
-    return console.log(`Assertion Passed: ${actual} === ${expected}`);
-  }
-};
-
 // This function will take an array and return an array with the middle element or elements if the middle falls between two items.
-const middle = function(array) {
+const middle = array => {
   const length = array.length;
   if (length < 3) {
     return [];
@@ -37,14 +16,4 @@ const middle = function(array) {
   return output;
 };
 
-
-// Testing
-assertArraysEqual(middle([1, 2]), []);
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-
-assertArraysEqual(middle([1, 2, 3, 4]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4]), [3]);
-assertArraysEqual(middle([1]), [1]);
-assertArraysEqual(middle([1, 2]), [1, 2]);
+module.exports = middle;
