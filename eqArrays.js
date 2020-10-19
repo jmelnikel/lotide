@@ -1,14 +1,5 @@
-// Here temporarily
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`Assertion Failed: ${actual} does not equal ${expected}`);
-  }
-};
-
 // This function will take two arrays and compare them and will return true or false based on if they are equal to eachother. The equality is not just in content, but order and index position of the elements.
-const eqArrays = function(array1, array2) {
+const eqArrays = (array1, array2) => {
   if (array1.length !== array2.length) {
     return false;
   }
@@ -24,13 +15,4 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
-
-//Testing
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
-
-assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4]]), true);
-assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]), false);
-assertEqual(eqArrays([[2, 3], [4]], [[2, 3], 4]), false);
+module.exports = eqArrays;
