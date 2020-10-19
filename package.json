@@ -1,0 +1,26 @@
+{
+  "name": "lotide",
+  "version": "1.0.0",
+  "description": "This is a library of functions that was inspired by the Lodash library - a utility library for JavaScript.",
+  "main": "assertEqual.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmelnikel/lotide.git"
+  },
+  "author": "Jason Melnikel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmelnikel/lotide/issues"
+  },
+  "homepage": "https://github.com/jmelnikel/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.0"
+  }
+}
