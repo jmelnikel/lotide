@@ -1,8 +1,17 @@
-const tail = require("../tail")
-const assertEqual = require("../assertEqual");
-const words = ["Yo Yo", "Lighthouse", "Labs"];
+const assert = require("chai").assert;
+const tail = require("../tail");
 
-assertEqual(words.length, 3);
-assertEqual(tail(words).length, 2);
-assertEqual(tail(words)[0], "Lighthouse");
-assertEqual(tail(words)[1], "Labs");
+describe('#tail', () => {
+  it("should return 2 for ['Yo Yo', 'Lighthouse', 'Labs']", () => {
+    assert.strictEqual(tail(['Yo Yo', 'Lighthouse', 'Labs']).length, 2);
+  });
+  it("should return 'Lighthouse' for ['Yo Yo', 'Lighthouse', 'Labs']", () => {
+    assert.strictEqual(tail(['Yo Yo', 'Lighthouse', 'Labs'])[0], 'Lighthouse');
+  });
+  it("should return 'Labs' for ['Yo Yo', 'Lighthouse', 'Labs']", () => {
+    assert.strictEqual(tail(['Yo Yo', 'Lighthouse', 'Labs'])[1], 'Labs');
+  });
+  it("should not return 'Yo Yo' for ['Yo Yo', 'Lighthouse', 'Labs']", () => {
+    assert.notStrictEqual(tail(['Yo Yo', 'Lighthouse', 'Labs'])[0], 'Yo Yo');
+  });
+})

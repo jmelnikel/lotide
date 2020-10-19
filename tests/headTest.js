@@ -5,6 +5,9 @@ describe("#head", () => {
   it("should return 5 for [5, 6, 7]", () => {
     assert.strictEqual(head([5, 6, 7]), 5);
   });
+  it("should return [5, 6] for [[5, 6], 7, 8]", () => {
+    assert.deepEqual(head([[5, 6], 7, 8]), [5, 6]);
+  });
   it("should return 'Hello' for ['Hello', 'Lighthouse', 'Labs']", () => {
     assert.strictEqual(head(['Hello', 'Lighthouse', 'Labs']), 'Hello');
   });
