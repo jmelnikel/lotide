@@ -4,7 +4,7 @@ This is a library of functions that was inspired by the Lodash [Lodash](https://
 ---
 ## Purpose
 
-**WARNING: This library was published for learning purposes only. It is not intended for use in production-grade software.**
+**WARNING: This library is for learning purposes only. It is not intended for use in production-grade software.**
 
 These Javascript functions are exercises to learn the fundamentals of programming and data manipulation of arrays and objects. This is accomplished with iteration, callbacks, and recursion, and working with automated unit testing principles and libraries.  
 
