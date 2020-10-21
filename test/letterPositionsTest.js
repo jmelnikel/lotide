@@ -18,5 +18,5 @@ describe('#letterPositions', () => {
   });
   it('should return undefined for "c"', () => {
     assert.deepEqual(_.letterPositions(string)["c"], undefined);
-  })
+  });
 });
