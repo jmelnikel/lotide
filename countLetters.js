@@ -1,15 +1,5 @@
-// Here Temporarily
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    return console.log(`Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    return console.log(`Assertion Failed: ${actual} does not equal ${expected}`);
-  }
-};
-
-
 // This function will take in a string and count the occurance of each letter as an object.
-const countLetters = function(string) {
+const countLetters = string => {
   let output = {};
   for (let letter of string) {
     if (output[letter] === undefined) {
@@ -21,11 +11,4 @@ const countLetters = function(string) {
   return output;
 };
 
-// Testing
-const string = "UPPERCASE and lowercase";
-
-assertEqual(countLetters(string)["a"], 2);
-assertEqual(countLetters(string)["A"], 1);
-assertEqual(countLetters(string)["p"], undefined);
-assertEqual(countLetters(string)["P"], 2);
-assertEqual(countLetters(string)[" "], 2);
+module.exports = countLetters;
