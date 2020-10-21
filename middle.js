@@ -1,9 +1,7 @@
-// This function will take an array and return an array with the middle element or elements if the middle falls between two items.
+// This function will take an array and return an array with the middle element or elements if the middle falls between two items. For arrays with one or two elements, return an empty array.
 const middle = array => {
   const length = array.length;
-  if (length < 3) {
-    return [];
-  }
+  if (length < 3) return [];
 
   const middleIndexToUse = Math.ceil(length / 2) - 1;
   let output = [];
