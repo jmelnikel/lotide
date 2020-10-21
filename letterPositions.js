@@ -1,4 +1,4 @@
-//This function, when given a string, will return an object of the indexes of all the letters.
+// This function, when given a string, will return an object of the indexes of all the letters.
 const letterPositions = (string) => {
   let output = {};
   for (let index = 0; index < string.length; index++) {
