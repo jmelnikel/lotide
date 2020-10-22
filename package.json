@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@my-username/lotide",
   "version": "1.1.0",
   "description": "This is a library of functions that was inspired by the Lodash library - a utility library for JavaScript.",
   "main": "index.js",
@@ -22,5 +22,6 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^8.2.0"
-  }
+  },
+  "dependencies": {}
 }
