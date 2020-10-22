@@ -7,5 +7,3 @@ const assertEqual = (actual, expected) => {
     return console.log(`Assertion Failed: ${actual} does not equal ${expected}`);
   }
 };
-
-module.exports = assertEqual;
