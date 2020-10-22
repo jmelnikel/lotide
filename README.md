@@ -1,4 +1,4 @@
-# Lotide 1.1.0
+# Lotide 1.1.1
 This is a library of functions that was inspired by the [Lodash](https://lodash.com) library - a utility library for JavaScript.
 
 ---

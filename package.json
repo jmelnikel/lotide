@@ -1,6 +1,6 @@
 {
   "name": "@jmelnikel/lotide",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This is a library of functions that was inspired by the Lodash library - a utility library for JavaScript.",
   "main": "index.js",
   "directories": {
