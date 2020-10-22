@@ -2,9 +2,9 @@
   "name": "lotide",
   "version": "1.0.0",
   "description": "This is a library of functions that was inspired by the Lodash library - a utility library for JavaScript.",
-  "main": "assertEqual.js",
+  "main": "",
   "directories": {
-    "test": "tests"
+    "test": "test"
   },
   "scripts": {
     "test": "mocha"

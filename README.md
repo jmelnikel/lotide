@@ -30,8 +30,8 @@ Finially, this library was used to learn about software dependancies, package ma
 ## Documentation
 
 The following functions are currently implemented with their corresponding tests in the `test` folder:
-* `countLetters()`: This function will take in a string and count the occurance of each letter as an object.
-* `countOnly()`: This function will be given and array of various items and an object that will indicate which items the function needs to work with (using a boolean). It will return an object containing counts of everything that the input object listed.
+* `countLetters()`: This function will take in a string and return the occurance of each letter as an object.
+* `countOnly()`: This function will be given and array of items and an object that will indicate which items the function needs to work with (using a boolean). It will return an object containing counts of everything that the input object listed.
 * `eqArrays()`: This function will take two arrays (with nesting) and compares them and will return true or false based on if they are equal to eachother. The equality is not just in content, but order and index position of the elements.
 * `eqObjects()`: This function will take two objects (with nesting) and compares them and will return true or false based on if they are equal to eachother.
 * `findKey()`: This function takes an object and callback function. It will return the first key for which the callback fucnction returns a truthy value.
