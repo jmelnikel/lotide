@@ -13,20 +13,6 @@ Regarding testing, initially independant testing functions were created (see arc
 Finially, this library was used to learn about software dependancies, package management, and *NPM*.  
 
 ---
-## Usage
-**Installation:**
-`npm i @jmelnikel/lotide`
-
-**Requiring:**
-`const _ = require('@jmelnikel/lotide');`
-
-**Calling:**
-`const results = _.tail([1, 2, 3]) // => [2, 3]`
-
-**Testing**
-`npm test`
-
----
 ## Documentation
 
 The following functions are currently implemented with their corresponding tests in the `test` folder:
