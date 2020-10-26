@@ -1,10 +1,6 @@
 const { assert } = require("chai");
 const _ = require("../index");
 
-const object1 = { a: "1", b: "2" };
-const object2 = { b: "2", a: "1" };
-const object3 = { a: "1", b: "2", c: "3" };
-
 describe('#eqObjects', () => {
   it('should return true for { a: "1", b: "2" } compared to { b: "2", a: "1" }', () => {
     assert.isTrue(_.eqObjects({ a: "1", b: "2" }, { b: "2", a: "1" }));
