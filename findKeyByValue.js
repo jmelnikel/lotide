@@ -2,7 +2,9 @@
 const findKeyByValue = (object, value) => {
   let key = undefined;
   for (let item in object) {
-    if (object[item] === value) key = item;
+    if (object[item] === value) {
+      key = item;
+    }
   }
   return key;
 };

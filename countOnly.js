@@ -3,10 +3,14 @@ const countOnly = (allItemsArray, itemsToCountObject) => {
   let output = {};
   for (let item in itemsToCountObject) {
     // Produces eslint error: if (itemsToCountObject.hasOwnProperty(item) && itemsToCountObject[item] === true) {
-    if (itemsToCountObject[item] === true) output[item] = 0;
+    if (itemsToCountObject[item] === true) {
+      output[item] = 0;
+    }
   }
   for (let item of allItemsArray) {
-    if (output[item] >= 0) output[item] += 1;
+    if (output[item] >= 0) {
+      output[item] += 1;
+    }
   }
   return output;
 };
